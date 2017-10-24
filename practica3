@@ -1,0 +1,40 @@
+#include <iostream>
+#include <stdio.h>
+#define TAM 2
+
+
+int main(int argc, char** argv) {
+
+	int A[2][2], B[2][2], C[2][2];
+	
+	    
+		printf("Inserte los datos de la matriz A:\n");
+	for(int i=0;i<TAM;i++){
+		printf("Fila %i\n", i+1);
+		for(int j=0;j<TAM;j++){
+			printf("Dato %i: ",j+1);
+			scanf("%i", &A[i][j]);
+		}
+	}
+	system("cls");
+	printf("Inserte los datos de la matriz B:\n");
+	for(int i=0;i<TAM;i++){
+		printf("Fila %i\n", i+1);
+		for(int j=0;j<TAM;j++){
+			printf("Dato %i: ",j+1);
+			scanf("%i", &B[i][j]);
+		}
+	}
+	system("cls");
+	
+    printf("LA MATRIZ OBTENIDA DE LA SUMA DE A Y B, ES:\n");
+	for(int i=0;i<TAM;i++){
+		for(int j=0;j<TAM;j++){
+			C[i][j]=A[i][j]+B[i][j];
+			printf("%i\t", C[i][j]);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
